@@ -1,0 +1,20 @@
+/*The Animation Code*/
+@keyframes AnimationPic {
+    0%  {transform: translateY(50px) rotate(0deg);}
+    25% {filter: grayscale(100%); transform: rotate(180deg);
+        border-radius: 100%;}
+    75% {filter: grayscale(100%); }
+    100% {transform: translateY(50px) rotate(360deg); border-radius: 0%;}
+}
+
+/* The Animated Icon we are applying the animation to*/
+#AnimationPic {
+    border: 5px solid blue;
+    padding: 5px solid blue;
+    margin: 5%;
+    width: 60px;
+    height: 60px;
+    animation-name: AnimationPic;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
