@@ -1,20 +1,24 @@
 /*The Animation Code*/
 @keyframes AnimationPic {
-    0%  {transform: translateY(50px) rotate(0deg);}
-    25% {filter: grayscale(100%); transform: rotate(180deg);
-        border-radius: 100%;}
-    75% {filter: grayscale(100%); }
-    100% {transform: translateY(50px) rotate(360deg); border-radius: 0%;}
+    0%  {transform: translateY(0);}
+    25% {filter: grayscale(100%); transform: translateY(-50px) rotate(180deg);}
+    50% {filter: grayscale(100%); border-radius: 100%;}
+    100% {transform: translateY(0) rotate(360deg)}
 }
 
 /* The Animated Icon we are applying the animation to*/
 #AnimationPic {
     border: 5px solid blue;
-    padding: 5px solid blue;
+    border-radius: 25%;
     margin: 5%;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+#AnimationPic:hover {
+    
     animation-name: AnimationPic;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
